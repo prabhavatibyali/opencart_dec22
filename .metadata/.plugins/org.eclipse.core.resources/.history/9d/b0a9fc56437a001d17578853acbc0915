@@ -1,0 +1,17 @@
+package xpathdemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpathd {
+
+	public static void main(String[] args) {
+		
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://demo.opencart.com/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("abs--/html[1]/body[1]/header[1]/div[1]/div[1]/div[2]/div[1]/input[1]"));
+		//String prname=driver.findElement(By.xpath("//input[@placeholder='Search'='MacBook']")).getText();
+	}
+
+}

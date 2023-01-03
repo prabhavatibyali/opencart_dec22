@@ -1,0 +1,31 @@
+package xpathdemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpathaxes {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://money.rediff.com/gainers/bse/daily/groupa");
+		driver.manage().window().maximize();
+		
+		
+				
+	//	contains()
+				//tagName[contains(text(),’substring’)] 
+				 //*[contains(text(),’substring’)]
+				 //tagName[contains(.,’substring’)] 
+		//String text=driver.findElement(By.xpath("//a[contains(text(),'IFB')]")).getText();
+		//String text=driver.findElement(By.xpath("//*[contains(text(),'IFB')]")).getText();
+		String text=driver.findElement(By.xpath("//a[contains(.,'IFB')]/self::a")).getText();
+		System.out.println("Self : "+ text); //IFB Industries
+			
+		//Parent - Selects the parent of the current node (always One)
+				text=driver.findElement(By.xpath("//a[contains(text(),'IFB')]/parent::td")).getText();// there is no text for parent, so it is same value display
+				System.out.println("Parent : "+text);  //IFB Industries
+				
+	}
+
+}

@@ -1,0 +1,29 @@
+package xpathdemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class xpathd {
+
+	public static void main(String[] args) {
+		
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://demo.opencart.com/");
+		driver.manage().window().maximize();
+		
+		//full xpath or absolute path
+		//String productname=driver.findElement(By.xpath("/html/body/header/div/div/div[2]/div/input")).getText();
+		
+		//relative xpath o xpath
+		//String productname=driver.findElement(By.xpath("//*[@id=\"search\"]/input")).getText();
+				
+				//From selectorhub Relxpath
+				//String productname=driver.findElement(By.xpath("//input[@placeholder='Search']")).getText();
+				
+		//*[@attribute='value']
+				//tagname[@attribute='value']
+				String productname=driver.findElement(By.xpath("input[@name='search']")).getText();
+				System.out.println(productname);
+			}
+
+}

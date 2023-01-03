@@ -1,0 +1,68 @@
+package Loopspratise;
+
+public class Loop {
+
+	public static void main(String[] args) {
+		
+		//while ex1 1 to 10
+		/*int i=1;
+		while(i<=10)
+		{System.out.println(i);
+			i++;}*/
+		
+		//while ex2 hello 10 times
+			/*	int i=1;
+				while(i<=10)
+				{System.out.println("hello");
+					i++;}
+		*/
+				
+		// even or odd
+		/*int i=1;
+		while(i<=10)
+		{
+			if(i%2!=0)
+		{System.out.println(i);
+	}i++;}
+			*/	
+		//decrement
+	/*	int i=10;
+		while(i>=1)
+		{System.out.println(i);
+			i--;}*/
+		
+		//do while
+		/*int i=1;
+		do
+		{System.out.println(i);
+		i++;}while(i<10);*/
+		
+		//compare do and do-while
+	/*	int i=10;
+		while(i<=5)
+		{System.out.println(i);
+		i++;
+		}// nothing
+		
+		do
+		{System.out.println(i);
+		i++;
+		}while(i<=5);//10
+		*/
+		
+		//For loop
+	/*	for(int i=1;i<=10;i++)
+		{
+		System.out.println(i);
+		}*/
+		
+		for(int i=1;i<=10;i++)
+		{
+			if(i%2==0)
+			{System.out.println("even no");
+						}
+		}
+		
+	}
+
+}
